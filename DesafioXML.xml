@@ -1,0 +1,252 @@
+﻿<disponibilidade>  
+  <trajeto>
+    <info>
+      <datapartida>2018-08-20</datapartida>
+      <origem>SÃ£o Paulo (CGH) - SP, BR</origem>      
+      <destino>Curitiba - PR, BR</destino>      
+    </info>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="908,90" equiv="" desconto="199,96" taxa="31,27" bagage="0">708,94</tarifa>
+        <tarifa nome="PLUS"  moeda="BRL" cambio="1,00000" base="983,90" equiv="" desconto="216,46" taxa="31,27" bagage="1">767,44</tarifa>
+      </tarifas>
+      <segmento id="1" traj="1">
+        <cia>Lan Airlines</cia>
+        <numerovoo>3001</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>06:35:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>07:40:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="1354,90" equiv="" desconto="298,08" taxa="31,27" bagage="1">1056,82</tarifa>
+        <tarifa nome="TOP"  moeda="BRL" cambio="1,00000" base="1474,90" equiv="" desconto="324,48" taxa="31,27" bagage="2">1150,42</tarifa>
+      </tarifas>
+      <segmento id="2" traj="1">
+        <cia>Lan Airlines</cia>
+        <numerovoo>3009</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>08:05:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>09:05:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="999,90" equiv="" desconto="219,98" taxa="31,27" bagage="0">779,92</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="1074,90" equiv="" desconto="236,48" taxa="31,27" bagage="1">838,42</tarifa>
+      </tarifas>
+      <segmento id="3" traj="1">        
+        <cia>Lan Airlines</cia>
+        <numerovoo>3003</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>09:10:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>10:15:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="908,90" equiv="" desconto="199,96" taxa="31,27" bagage="0">708,94</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="983,90" equiv="" desconto="216,46" taxa="31,27" bagage="1">767,44</tarifa>
+      </tarifas>
+      <segmento id="4" traj="1">
+        <cia>Lan Airlines</cia>
+        <numerovoo>3237</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>10:00:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>11:05:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="849,90" equiv="" desconto="186,98" taxa="31,27" bagage="0">662,92</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="924,90" equiv="" desconto="203,48" taxa="31,27" bagage="1">721,42</tarifa>
+      </tarifas>
+      <segmento id="5" traj="1">
+        <cia>Lan Airlines</cia>
+        <numerovoo>3011</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>13:30:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>14:30:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="645,90" equiv="" desconto="142,10" taxa="31,27" bagage="0">503,80</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="715,90" equiv="" desconto="157,50" taxa="31,27" bagage="1">558,40</tarifa>
+      </tarifas>
+      <segmento id="6" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3013</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>15:20:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>16:20:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="645,90" equiv="" desconto="142,10" taxa="31,27" bagage="0">503,80</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="715,90" equiv="" desconto="157,50" taxa="31,27" bagage="1">558,40</tarifa>
+      </tarifas>
+      <segmento id="7" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3015</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>17:10:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>18:10:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="645,90" equiv="" desconto="142,10" taxa="31,27" bagage="0">503,80</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="715,90" equiv="" desconto="157,50" taxa="31,27" bagage="1">558,40</tarifa>
+      </tarifas>
+      <segmento id="8" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3021</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>18:35:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>19:35:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="1099,90" equiv="" desconto="241,98" taxa="31,27" bagage="0">857,92</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="1174,90" equiv="" desconto="258,48" taxa="31,27" bagage="1">916,42</tarifa>
+      </tarifas>
+      <segmento id="9" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3089</numerovoo>
+        <datasaida>2018-08-20</datasaida>
+        <horasaida>21:15:00</horasaida>
+        <datachegada>2018-08-20</datachegada>
+        <horachegada>22:25:00</horachegada>
+      </segmento>
+    </viagem>
+  </trajeto>
+  <trajeto>
+    <info>
+      <datapartida>2018-08-24</datapartida>
+      <origem>Curitiba - PR, BR</origem>
+      <codorigem>CWB</codorigem>
+      <destino>SÃ£o Paulo (CGH) - SP, BR</destino>
+      <coddestino>CGH</coddestino>
+    </info>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="461,90" equiv="" desconto="101,62" taxa="31,27" bagage="0">360,28</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="536,90" equiv="" desconto="118,12" taxa="31,27" bagage="1">418,78</tarifa>
+      </tarifas>
+      <segmento id="10" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3129</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>06:10:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>07:20:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="461,90" equiv="" desconto="101,62" taxa="31,27" bagage="0">360,28</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="536,90" equiv="" desconto="118,12" taxa="31,27" bagage="1">418,78</tarifa>
+      </tarifas>
+      <segmento id="11" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3004</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>08:25:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>09:25:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="461,90" equiv="" desconto="101,62" taxa="31,27" bagage="0">360,28</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="536,90" equiv="" desconto="118,12" taxa="31,27" bagage="1">418,78</tarifa>
+      </tarifas>
+      <segmento id="12" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3010</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>10:05:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>11:05:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="461,90" equiv="" desconto="101,62" taxa="31,27" bagage="0">360,28</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="536,90" equiv="" desconto="118,12" taxa="31,27" bagage="1">418,78</tarifa>
+      </tarifas>
+      <segmento id="13" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3014</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>11:15:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>12:15:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="461,90" equiv="" desconto="101,62" taxa="31,27" bagage="0">360,28</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="536,90" equiv="" desconto="118,12" taxa="31,27" bagage="1">418,78</tarifa>
+      </tarifas>
+      <segmento id="14" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3008</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>11:45:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>12:50:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="1354,90" equiv="" desconto="298,08" taxa="31,27" bagage="1">1056,82</tarifa>
+        <tarifa nome="TOP" moeda="BRL" cambio="1,00000" base="1474,90" equiv="" desconto="324,48" taxa="31,27" bagage="2">1150,42</tarifa>
+      </tarifas>
+      <segmento id="15" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>16:55:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>18:00:00</horachegada>
+      </segmento>
+    </viagem>
+    <viagem>
+      <tarifas>
+        <tarifa nome="LIGHT" moeda="BRL" cambio="1,00000" base="501,90" equiv="" desconto="110,42" taxa="31,27" bagage="0">391,48</tarifa>
+        <tarifa nome="PLUS" moeda="BRL" cambio="1,00000" base="576,90" equiv="" desconto="126,92" taxa="31,27" bagage="1">449,98</tarifa>
+      </tarifas>
+      <segmento id="16" traj="1">
+        <ordinal>1</ordinal>
+        <cia>Lan Airlines</cia>
+        <numerovoo>3020</numerovoo>
+        <datasaida>2018-08-24</datasaida>
+        <horasaida>20:10:00</horasaida>
+        <datachegada>2018-08-24</datachegada>
+        <horachegada>21:20:00</horachegada>
+      </segmento>
+    </viagem>
+  </trajeto>
+</disponibilidade>
