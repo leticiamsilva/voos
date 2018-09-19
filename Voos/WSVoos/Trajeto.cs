@@ -13,8 +13,8 @@ namespace WSVoos
 
         private List<Voo> voos;
 
-        public string Nome { get => nome; set => nome = value; }
-        public string Data { get => data; set => data = value; }
-        public List<Voo> Voos { get => voos; set => voos = value; }
+        public string Nome { get { return nome; } set { nome = value; } }
+        public string Data { get { return data; } set { data = value; } }
+        public List<Voo> Voos { get { return voos; } set { voos = value; } }
     }
 }

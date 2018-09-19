@@ -11,5 +11,8 @@ namespace WSVoos
         private double valor;
 
         private Voo voo;
+
+        public string Nome { get { return nome; } set { nome = value; } }
+        public double Valor { get { return valor; } set { valor = value; } }
     }
 }

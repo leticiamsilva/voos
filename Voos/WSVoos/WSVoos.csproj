@@ -75,10 +75,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebServiceVoos.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo.cs" />
+    <Compile Include="Trajeto.cs" />
+    <Compile Include="Voo.cs" />
+    <Compile Include="WebServiceVoos.asmx.cs">
+      <DependentUpon>WebServiceVoos.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

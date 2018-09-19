@@ -1,0 +1,8 @@
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.csproj.CoreCompileInputs.cache
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\WSVoos.dll.config
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\WSVoos.dll
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\WSVoos.pdb
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.dll
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.pdb

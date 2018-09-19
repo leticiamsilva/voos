@@ -57,23 +57,45 @@ namespace WSVoos
         {
             Voo voo = new Voo();
 
-            XmlNode xmlAux = xmlNode["tarifas"];
-
-            foreach (XmlElement child in xmlAux)
+            foreach (XmlElement child in xmlNode.ChildNodes)
             {
-                try
+                if (child.Name.ToLower().Equals("tarifas"))
                 {
-                    double tarifaConvertida = Convert.ToDouble(child.InnerText.Trim().Replace(",","."));
-                }
-                catch
-                {
+                    foreach (XmlElement childs in xmlNode["tarifas"].ChildNodes)
+                    {
+                        double tarifaConvertida = 0;
+                        try
+                        {
+                            tarifaConvertida = Convert.ToDouble(childs.InnerText.Trim().Replace(",", "."));
+                        }
+                        catch
+                        {
+                            tarifaConvertida = 0;
+                        }
 
+                        Tipo tipo = new Tipo();
+                        tipo.Nome = childs.Attributes["nome"].Value;
+                        tipo.Valor = tarifaConvertida;
+
+                        voo.Tipos.Add(tipo);
+                    }
                 }
-                
-                //voo.Tarifas.Add();
+
+                if (child.Name.Equals("segmento"))
+                {
+                    foreach (XmlNode xmlSeg in child.ChildNodes)
+                    {
+                        if (xmlSeg.Name.ToLower().Equals("numerovoo"))
+                            voo.Id = xmlSeg.InnerText.Trim();
+
+                        if (xmlSeg.Name.ToLower().Equals("horasaida"))
+                            voo.Hora = xmlSeg.InnerText.Trim();
+                    }
+                }
             }
 
-                return voo;
+            return voo;
+        
         }
     }
 }
