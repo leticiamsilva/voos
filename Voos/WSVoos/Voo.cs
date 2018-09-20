@@ -10,12 +10,14 @@ namespace WSVoos
         private string id;
         private string hora;
         private List<Tipo>tipos;
-
-        private Trajeto trajeto;
+        
+        public Voo()
+        {
+            this.tipos = new List<Tipo>();
+        }
 
         public string Id { get { return id; } set { id = value; } }
         public string Hora { get { return hora; } set { hora = value; }  }
-        public Trajeto Trajeto { get { return trajeto; } set { trajeto = value; }  }
-        public List<Tipo> Tipos { get { return tipos; } set { tipos = value; } }
+        public List<Tipo> Tipos { get { return tipos; } set { this.tipos = value; } }
     }
 }

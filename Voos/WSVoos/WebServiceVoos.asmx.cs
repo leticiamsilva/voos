@@ -4,31 +4,33 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Xml;
+using System.Web.Script.Serialization;
+
 namespace WSVoos
 {
     /// <summary>
     /// Descrição resumida de WebServiceVoos
     /// </summary>
-    [WebService(Namespace = "http://tempuri.org/")]
+    [WebService(Namespace = "http://localhost:55069/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // Para permitir que esse serviço da web seja chamado a partir do script, usando ASP.NET AJAX, remova os comentários da linha a seguir. 
-    // [System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class WebServiceVoos : System.Web.Services.WebService
     {
 
         [WebMethod]
-        public List<Trajeto> LerVoos()
+        public string LerVoos()
         {
             List<Trajeto> trajetos = new List<Trajeto>();
 
-            string caminho_arquivo = @"..\DesafioXML.xml";
+            string caminho_arquivo = @"C:\Users\letci\Desktop\desafio\voos\DesafioXML.xml";
 
             //Leitura do arquivo XML
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(caminho_arquivo);
 
-            XmlNodeList xnList = xmlDoc.GetElementsByTagName("disponibilidade");
+            XmlNodeList xnList = xmlDoc.GetElementsByTagName("trajeto");
 
             for(int i = 0; i < xnList.Count; i++)
             {
@@ -50,7 +52,9 @@ namespace WSVoos
 
             }
 
-            return trajetos;
+            var json = new JavaScriptSerializer().Serialize(trajetos);
+
+            return json;
         }
 
         public Voo PegarDadosVoo(XmlNode xmlNode)
@@ -75,7 +79,7 @@ namespace WSVoos
 
                         Tipo tipo = new Tipo();
                         tipo.Nome = childs.Attributes["nome"].Value;
-                        tipo.Valor = tarifaConvertida;
+                        tipo.Valor = tarifaConvertida/100;
 
                         voo.Tipos.Add(tipo);
                     }

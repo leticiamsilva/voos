@@ -6,6 +6,11 @@
     <div class="row">
         <!-- Todos os Trajetos -->
         <h1>Trajeto - PEGAR INFO DO XML</h1>
+        {trajetos.map((index, item)=> (
+        <div>item.nome</div>)}
+            
+                
+        
         <div class="col-md-3">
             <h2>Data</h2>
             <p>

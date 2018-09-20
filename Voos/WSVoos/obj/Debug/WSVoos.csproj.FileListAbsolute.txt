@@ -6,3 +6,4 @@ C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\Microsoft.CodeDom.Providers.
 C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.dll
 C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.pdb
+C:\Users\letci\Desktop\desafio\voos\Voos\WSVoos\obj\Debug\WSVoos.csprojResolveAssemblyReference.cache
