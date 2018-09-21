@@ -18,8 +18,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $("#conteudoVoos").append('Mensagem Qualquer');
-
         $(document).ready(function () {
             $.ajax({
                 type: "POST",
@@ -79,9 +77,9 @@
 
 
         function OnErrorCall_(jqXHR, textStatus, errorThrown) {
-            alert("Erro na chamada: " + textStatus);
-            alert("Erro Thrown: " + errorThrown);
-            alert("jqXHR.responseText: " + jqXHR.responseText);
+            console.log("Erro na chamada: " + textStatus);
+            console.log("Erro Thrown: " + errorThrown);
+            console.log("jqXHR.responseText: " + jqXHR.responseText);
         }
     </script>
 
@@ -108,9 +106,10 @@
             </Scripts>
         </asp:ScriptManager>
 
-       <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+       
         <div class="container body-content">
             <div class="jumbotron1234">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
                 <div id="conteudoVoos" class="row">
 
                 </div>
