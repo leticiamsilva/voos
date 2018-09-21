@@ -16,6 +16,75 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("#conteudoVoos").append('Mensagem Qualquer');
+
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                url: "Default.aspx/LerVoos",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: OnSuccess_,
+                error: OnErrorCall_
+            });
+        });
+
+        function OnSuccess_(response) {
+            var elementos = response;
+            var conteudoTotal = "";
+            var trajetoText;
+            var dataText;
+            var horaText;
+            var vooText;
+            var tipoText;
+            var valorText;
+            $("#conteudoVoos").html('<h1>1234</h1');
+
+            elementos.forEach(function (traj, index) {
+                trajetoText = ""; dataText = ""; horaText = ""; vooText = ""; tipoText = ""; valorText = "";
+
+                trajetoText = trajetoText + "<br><br><h1>Trajeto: " + traj.Nome + "<\h1><br><br>";
+                dataText = dataText + "<div class=\"col-md-3\"><h2>Data</h2><p>" + traj.Data + "</p></div>";
+                horaText = horaText + "<div class=\"col-md-3\"><h2>Hora</h2>";    
+                vooText = vooText + "<div class=\"col-md-2\"><h2>Voo</h2>";
+               
+                traj.forEach(function (v, indexV) {  
+
+                    horaText = horaText + "<p>" + traj.Voos.Hora + "</p>";                    
+                    vooText = vooText + "<p>" + traj.v.Id + "</p>";
+
+                        v.Tipos.forEach(function (t, indexTipo) {
+
+                            tipoText = tipoText + indexTipo.Nome;
+                            valorText = valorText + indexTipo.Valor;
+                    });
+                });
+
+                //fechamento das divs para cada coluna
+                var fechaDiv = "</div>";
+                horaText = horaText + fechaDiv;
+                vooText = vooText + fechaDiv;
+                tipoText = tipoText + fechaDiv;
+                valorText = fechaDiv;
+
+                conteudoTotal = conteudoTotal + trajetoText + dataText + horaText + vooText + tipoText + valorText;
+
+            });
+
+            $("#conteudoVoos").textContent = conteudoTotal; 
+        }
+
+
+        function OnErrorCall_(jqXHR, textStatus, errorThrown) {
+            alert("Erro na chamada: " + textStatus);
+            alert("Erro Thrown: " + errorThrown);
+            alert("jqXHR.responseText: " + jqXHR.responseText);
+        }
+    </script>
+
 </head>
 <body>
     <form runat="server">
@@ -39,32 +108,17 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <!--<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nome do aplicativo</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Página inicial</a></li>
-                        <li><a runat="server" href="~/About">Sobre</a></li>
-                        <li><a runat="server" href="~/Contact">Contato</a></li>
-                    </ul>
+       <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        <div class="container body-content">
+            <div class="jumbotron1234">
+                <div id="conteudoVoos" class="row">
+
                 </div>
             </div>
-        </div>-->
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-
-            </asp:ContentPlaceHolder>
             <hr />
+            
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Meu aplicativo ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Voos</p>
             </footer>
         </div>
 

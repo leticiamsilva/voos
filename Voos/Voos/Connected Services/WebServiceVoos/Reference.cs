@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Voos.ServiceReferenceWSVoos {
+namespace Voos.WebServiceVoos {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://localhost:55069/", ConfigurationName="ServiceReferenceWSVoos.WebServiceVoosSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://localhost:55069/", ConfigurationName="WebServiceVoos.WebServiceVoosSoap")]
     public interface WebServiceVoosSoap {
         
         // CODEGEN: Gerando contrato de mensagem porque o nome do elemento LerVoosResult no namespace http://localhost:55069/ não está marcado como nulo
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost:55069/LerVoos", ReplyAction="*")]
-        Voos.ServiceReferenceWSVoos.LerVoosResponse LerVoos(Voos.ServiceReferenceWSVoos.LerVoosRequest request);
+        Voos.WebServiceVoos.LerVoosResponse LerVoos(Voos.WebServiceVoos.LerVoosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost:55069/LerVoos", ReplyAction="*")]
-        System.Threading.Tasks.Task<Voos.ServiceReferenceWSVoos.LerVoosResponse> LerVoosAsync(Voos.ServiceReferenceWSVoos.LerVoosRequest request);
+        System.Threading.Tasks.Task<Voos.WebServiceVoos.LerVoosResponse> LerVoosAsync(Voos.WebServiceVoos.LerVoosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace Voos.ServiceReferenceWSVoos {
     public partial class LerVoosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LerVoos", Namespace="http://localhost:55069/", Order=0)]
-        public Voos.ServiceReferenceWSVoos.LerVoosRequestBody Body;
+        public Voos.WebServiceVoos.LerVoosRequestBody Body;
         
         public LerVoosRequest() {
         }
         
-        public LerVoosRequest(Voos.ServiceReferenceWSVoos.LerVoosRequestBody Body) {
+        public LerVoosRequest(Voos.WebServiceVoos.LerVoosRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -57,12 +57,12 @@ namespace Voos.ServiceReferenceWSVoos {
     public partial class LerVoosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LerVoosResponse", Namespace="http://localhost:55069/", Order=0)]
-        public Voos.ServiceReferenceWSVoos.LerVoosResponseBody Body;
+        public Voos.WebServiceVoos.LerVoosResponseBody Body;
         
         public LerVoosResponse() {
         }
         
-        public LerVoosResponse(Voos.ServiceReferenceWSVoos.LerVoosResponseBody Body) {
+        public LerVoosResponse(Voos.WebServiceVoos.LerVoosResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -85,12 +85,12 @@ namespace Voos.ServiceReferenceWSVoos {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WebServiceVoosSoapChannel : Voos.ServiceReferenceWSVoos.WebServiceVoosSoap, System.ServiceModel.IClientChannel {
+    public interface WebServiceVoosSoapChannel : Voos.WebServiceVoos.WebServiceVoosSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebServiceVoosSoapClient : System.ServiceModel.ClientBase<Voos.ServiceReferenceWSVoos.WebServiceVoosSoap>, Voos.ServiceReferenceWSVoos.WebServiceVoosSoap {
+    public partial class WebServiceVoosSoapClient : System.ServiceModel.ClientBase<Voos.WebServiceVoos.WebServiceVoosSoap>, Voos.WebServiceVoos.WebServiceVoosSoap {
         
         public WebServiceVoosSoapClient() {
         }
@@ -112,26 +112,26 @@ namespace Voos.ServiceReferenceWSVoos {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Voos.ServiceReferenceWSVoos.LerVoosResponse Voos.ServiceReferenceWSVoos.WebServiceVoosSoap.LerVoos(Voos.ServiceReferenceWSVoos.LerVoosRequest request) {
+        Voos.WebServiceVoos.LerVoosResponse Voos.WebServiceVoos.WebServiceVoosSoap.LerVoos(Voos.WebServiceVoos.LerVoosRequest request) {
             return base.Channel.LerVoos(request);
         }
         
         public string LerVoos() {
-            Voos.ServiceReferenceWSVoos.LerVoosRequest inValue = new Voos.ServiceReferenceWSVoos.LerVoosRequest();
-            inValue.Body = new Voos.ServiceReferenceWSVoos.LerVoosRequestBody();
-            Voos.ServiceReferenceWSVoos.LerVoosResponse retVal = ((Voos.ServiceReferenceWSVoos.WebServiceVoosSoap)(this)).LerVoos(inValue);
+            Voos.WebServiceVoos.LerVoosRequest inValue = new Voos.WebServiceVoos.LerVoosRequest();
+            inValue.Body = new Voos.WebServiceVoos.LerVoosRequestBody();
+            Voos.WebServiceVoos.LerVoosResponse retVal = ((Voos.WebServiceVoos.WebServiceVoosSoap)(this)).LerVoos(inValue);
             return retVal.Body.LerVoosResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Voos.ServiceReferenceWSVoos.LerVoosResponse> Voos.ServiceReferenceWSVoos.WebServiceVoosSoap.LerVoosAsync(Voos.ServiceReferenceWSVoos.LerVoosRequest request) {
+        System.Threading.Tasks.Task<Voos.WebServiceVoos.LerVoosResponse> Voos.WebServiceVoos.WebServiceVoosSoap.LerVoosAsync(Voos.WebServiceVoos.LerVoosRequest request) {
             return base.Channel.LerVoosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Voos.ServiceReferenceWSVoos.LerVoosResponse> LerVoosAsync() {
-            Voos.ServiceReferenceWSVoos.LerVoosRequest inValue = new Voos.ServiceReferenceWSVoos.LerVoosRequest();
-            inValue.Body = new Voos.ServiceReferenceWSVoos.LerVoosRequestBody();
-            return ((Voos.ServiceReferenceWSVoos.WebServiceVoosSoap)(this)).LerVoosAsync(inValue);
+        public System.Threading.Tasks.Task<Voos.WebServiceVoos.LerVoosResponse> LerVoosAsync() {
+            Voos.WebServiceVoos.LerVoosRequest inValue = new Voos.WebServiceVoos.LerVoosRequest();
+            inValue.Body = new Voos.WebServiceVoos.LerVoosRequestBody();
+            return ((Voos.WebServiceVoos.WebServiceVoosSoap)(this)).LerVoosAsync(inValue);
         }
     }
 }

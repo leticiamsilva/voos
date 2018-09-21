@@ -20,11 +20,12 @@ namespace WSVoos
     {
 
         [WebMethod]
-        public string LerVoos()
+        public  string LerVoos()
         {
             List<Trajeto> trajetos = new List<Trajeto>();
 
-            string caminho_arquivo = @"C:\Users\letci\Desktop\desafio\voos\DesafioXML.xml";
+            string path = System.AppDomain.CurrentDomain.BaseDirectory.ToString();
+            string caminho_arquivo = path + "DesafioXML.xml";
 
             //Leitura do arquivo XML
             XmlDocument xmlDoc = new XmlDocument();
@@ -36,11 +37,11 @@ namespace WSVoos
             {
                 Trajeto t = new Trajeto();
 
-                t.Data = xnList[i]["info"]["datapartida"].InnerText.Trim().Replace("-", "\\");
+                t.Data = xnList[i]["info"]["datapartida"].InnerText.Trim().Replace("-", "/");
 
                 string aux_trajeto = "";
                 aux_trajeto += xnList[i]["info"]["origem"].InnerText.Trim();
-                aux_trajeto += "~" + xnList[i]["info"]["origem"].InnerText.Trim();
+                aux_trajeto += " ~ " + xnList[i]["info"]["destino"].InnerText.Trim();
 
                 t.Nome = aux_trajeto;
 
@@ -50,6 +51,8 @@ namespace WSVoos
                         t.Voos.Add(PegarDadosVoo(xnList[i]["viagem"]));
                 }
 
+                trajetos.Add(t);
+
             }
 
             var json = new JavaScriptSerializer().Serialize(trajetos);
@@ -57,7 +60,7 @@ namespace WSVoos
             return json;
         }
 
-        public Voo PegarDadosVoo(XmlNode xmlNode)
+        public  Voo PegarDadosVoo(XmlNode xmlNode)
         {
             Voo voo = new Voo();
 
@@ -81,7 +84,9 @@ namespace WSVoos
                         tipo.Nome = childs.Attributes["nome"].Value;
                         tipo.Valor = tarifaConvertida/100;
 
+                       
                         voo.Tipos.Add(tipo);
+                        voo.Tipos.Sort();
                     }
                 }
 

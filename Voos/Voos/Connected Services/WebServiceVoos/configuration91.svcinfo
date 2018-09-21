@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="vxky7P5YLGKV5zV3lNAVCgENpxs=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="8uyKyvQ1zWgERqQRarudJD2kvoM=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="WebServiceVoosSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WebServiceVoosSoap" contract="ServiceReferenceWSVoos.WebServiceVoosSoap" bindingType="basicHttpBinding" address="http://localhost:55069/WebServiceVoos.asmx" bindingConfiguration="WebServiceVoosSoap">
+    <endpoint name="WebServiceVoosSoap" contract="WebServiceVoos.WebServiceVoosSoap" bindingType="basicHttpBinding" address="http://localhost:55069/WebServiceVoos.asmx" bindingConfiguration="WebServiceVoosSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:55069/WebServiceVoos.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>WebServiceVoosSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceReferenceWSVoos.WebServiceVoosSoap</serializedValue>
+          <serializedValue>WebServiceVoos.WebServiceVoosSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

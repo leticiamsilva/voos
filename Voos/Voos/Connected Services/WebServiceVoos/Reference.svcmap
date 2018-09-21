@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fcfaf9e2-cf92-47a4-ad35-bcba8cfa9b72" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="91c9d00c-05a6-4bc9-ae6c-92b1e75ded57" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:55069/WebServiceVoos.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WebServiceVoos.wsdl" MetadataType="Wsdl" ID="c0c8f04c-4637-4d35-8447-d7f647ce4c61" SourceId="1" SourceUrl="http://localhost:55069/WebServiceVoos.asmx?wsdl" />
-    <MetadataFile FileName="WebServiceVoos.disco" MetadataType="Disco" ID="29d93fd9-d724-4a61-aecf-ec5d2af0effc" SourceId="1" SourceUrl="http://localhost:55069/WebServiceVoos.asmx?disco" />
+    <MetadataFile FileName="WebServiceVoos.wsdl" MetadataType="Wsdl" ID="a84f8611-1328-480e-be24-49188ad4633b" SourceId="1" SourceUrl="http://localhost:55069/WebServiceVoos.asmx?wsdl" />
+    <MetadataFile FileName="WebServiceVoos.disco" MetadataType="Disco" ID="4def8fcb-d1b1-489c-99a7-8cefd48098f2" SourceId="1" SourceUrl="http://localhost:55069/WebServiceVoos.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

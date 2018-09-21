@@ -37,3 +37,6 @@ C:\Users\letci\Desktop\desafio\voos\Voos\Voos\obj\Debug\Voos.csprojResolveAssemb
 C:\Users\letci\Desktop\desafio\voos\Voos\Voos\obj\Debug\Voos.csproj.CoreCompileInputs.cache
 C:\Users\letci\Desktop\desafio\voos\Voos\Voos\obj\Debug\Voos.dll
 C:\Users\letci\Desktop\desafio\voos\Voos\Voos\obj\Debug\Voos.pdb
+C:\Users\letci\Desktop\desafio\voos\Voos\Voos\bin\WSVoos.dll
+C:\Users\letci\Desktop\desafio\voos\Voos\Voos\bin\WSVoos.pdb
+C:\Users\letci\Desktop\desafio\voos\Voos\Voos\bin\WSVoos.dll.config
